@@ -1,8 +1,9 @@
-﻿summMonth = prompt('Ваш бюджет на месяц?');
-nameShop = prompt('Название вашего магазина?');
+﻿var summMonth = prompt('Ваш бюджет на месяц?'),
+	nameShop = prompt('Название вашего магазина?');
+
 mainList = {
-	summMonth: 1000,
-	nameShop: "Веллнес",
+	summMonth: '',
+	nameShop: "",
 	shopGoods: ['Aplle', 'Milk'],
 	employers: {
 		director: 'Adam Smith',

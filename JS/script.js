@@ -1,10 +1,14 @@
 ﻿var summMonth = prompt('Ваш бюджет на месяц?'),
-	nameShop = prompt('Название вашего магазина?');
+	nameShop = prompt('Название вашего магазина?'),
+	shopGoods = [prompt('Какой тип товаров будем продавать?'),
+				 	 prompt('Какой тип товаров будем продавать?'),
+				 	 prompt('Какой тип товаров будем продавать?')];
+	
 
-mainList = {
-	summMonth: '',
-	nameShop: "",
-	shopGoods: ['Aplle', 'Milk'],
+var mainList = {
+	summMonth: summMonth,
+	nameShop: nameShop,
+	shopGoods: shopGoods,
 	employers: {
 		director: 'Adam Smith',
 		worker: 'John Walker',
@@ -13,9 +17,7 @@ mainList = {
 	open: true
 }
 
-var shopGoods = [prompt('Какой тип товаров будем продавать?'),
-				 prompt('Какой тип товаров будем продавать?'),
-				 prompt('Какой тип товаров будем продавать?')];
-
 // Бюджет за 1 день
-alert('Бюджет за 1 день = '+ summMonth/30);
+alert('Бюджет за 1 день = '+ mainList.summMonth/30);
+
+console.log(mainList);

@@ -13,7 +13,7 @@
 	},
 	time = 32;
 
-for(let i = 0; i < 5; i++) {
+/*for(let i = 0; i < 5; i++) {
 
 	let a = prompt('Какой тип товаров будем продавать?');
 	
@@ -25,6 +25,34 @@ for(let i = 0; i < 5; i++) {
 		i--;
 	}
 }
+*/
+/*let i = 0;
+while (i < 5) {
+	let a = prompt('Какой тип товаров будем продавать?');
+	
+	if ((typeof(a))  === 'string' && (typeof(a))  != null && a != '' && a.length < 50) {
+		console.log('Все верно!');
+		mainList.shopGoods[i] = a;
+		i++;
+	} else {
+		console.log('Вы ввели неправильное название товара');
+		
+	}
+}*/
+
+let i = 0;
+do {
+	let a = prompt('Какой тип товаров будем продавать?');
+	
+	if ((typeof(a))  === 'string' && (typeof(a))  != null && a != '' && a.length < 50) {
+		console.log('Все верно!');
+		mainList.shopGoods[i] = a;
+		i++;
+	} else {
+		console.log('Вы ввели неправильное название товара');
+		
+	}
+} while (i < 5);
 
 /*for(let i = 5; i > 0; i--) {
 
